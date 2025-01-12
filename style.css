@@ -1,11 +1,13 @@
+/* Основные стили для страницы */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    background: linear-gradient(135deg, #0077cc, #33aaff); /* Градиентный фон */
+    color: #fff;
 }
 
+/* Заголовок страницы */
 header {
     background-color: #0077cc;
     color: #fff;
@@ -13,12 +15,14 @@ header {
     text-align: center;
 }
 
+/* Стили для навигации */
 nav a {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
 }
 
+/* Секция карточек */
 .cards {
     padding: 20px;
     text-align: center;
@@ -31,9 +35,9 @@ nav a {
 
 .card-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    flex-wrap: wrap; /* Для переноса карточек на маленьких экранах */
+    justify-content: center; /* Выравнивание по центру */
+    gap: 20px; /* Расстояние между карточками */
 }
 
 .card {
@@ -44,6 +48,7 @@ nav a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
     text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Эффект при наведении */
 }
 
 .card img {
@@ -58,7 +63,12 @@ nav a {
     margin-bottom: 10px;
 }
 
+.card:hover {
+    transform: scale(1.05); /* Увеличение карточки при наведении */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Более выраженная тень */
+}
 
+/* Стили для формы */
 form {
     display: flex;
     flex-direction: column;
@@ -85,24 +95,8 @@ form button:hover {
     background-color: #005fa3;
 }
 
+/* Контакты */
 .contacts i {
     color: #0077cc;
     margin-right: 10px;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg, #0077cc, #33aaff);
-    color: #fff;
-}
-
-.card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
