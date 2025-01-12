@@ -72,3 +72,8 @@ form button {
 form button:hover {
     background-color: #005fa3;
 }
+
+.contacts i {
+    color: #0077cc;
+    margin-right: 10px;
+}
